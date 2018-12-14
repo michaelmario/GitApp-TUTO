@@ -1,0 +1,93 @@
+body{
+    margin:0;
+    left: 0;
+    right:0;   
+    background-color:rgb(26, 24, 24);
+    width:100%;
+    height:600px; 
+}
+.jumbotron{
+    background-image: url(/img/leport2.jpg);
+     background-repeat: no-repeat;
+     background-position: center ;
+     background-color:rgb(26, 24, 24);
+     color:#fff;
+     padding-right:0px;
+     padding-left:0px;
+     overflow: hidden;
+     display:flex;
+     justify-content: center;
+
+}
+p{
+ color:#fff;
+font-size:19px;
+font-family:cursive,sans-serif ;
+}
+form{
+    margin-bottom: 10px;
+}
+.rotateIn {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes rotateIn {
+    0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    }
+    }
+    @keyframes rotateIn {
+    0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    }
+    }
+    h1{
+    /* For Safari 3.1 to 6.0 */
+  -webkit-transition-property: font-size;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 1s;
+  /* Standard syntax */
+  transition-property: font-size;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+    } 
+   h1:hover {
+        font-size:1px;
+      }
+      .list-group-item {
+          background-color:#000;
+          color:#fff;
+          font-size: 20px;
+      }
+      span{
+          color:red;
+          float:right;
+      }
