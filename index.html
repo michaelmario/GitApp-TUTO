@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +11,18 @@
     <title>myNewGitDoc</title>
 </head>
 
-<body>
+<body onload="appendItem()">
     <div class="container-fluid">
         <div class="jumbotron">
             <h1 class="rotateIn">joyeux noël <br> Bonne année 2019 </h1>
                      
         </div>
         <div class="row">
-            <div class="col-md-5 col-md-offset-3 col-sm-12 col-xs-12">
-             <p>List de Provision pour passe le Revellion 2018 !!!</p>
-             
+            <div class="col-md-5 col-md-offset-3 col-sm-12 col-xs-12">                
+             <p>List de Provision pour passe le Revellion 2018 !!!</p>             
              <br>
+             <fieldset>
+                 <legend>À Acheter / À Faire  :</legend>
              <form class="form-inline" action="" method="POST" >
                 <div class="form-group">
                   <label class="sr-only" for="afaire">À Acheter / À Faire  :</label>
@@ -30,10 +30,12 @@
                 </div>           
                 <button type="submit" class="btn btn-success" id="envoyer">Envoyer</button>
               </form>
-              <ul class="list-group" id="listGroup">
-                   
-                  </ul>
-            </div> 
+            </fieldset>
+              <ul class="list-group" id="listGroup">                   
+              </ul>
+            </div>            
+               <div id="svg"></div>
+            </div>
         </div> 
        
        
@@ -42,7 +44,10 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.js"></script>
+        <script src="jquery.fireworks.js" type="text/JavaScript"></script>
     <script src="app.js"></script>
+    <script src="bubble.js"></script>
 </body>
 
 </html>
